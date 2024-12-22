@@ -4,16 +4,16 @@ type RuleType struct{}
 
 type REST_API struct {
 	RuleType
-	Method  string
-	Headers HeaderList
+	Method  string     `mapstructure:"method"`
+	Headers HeaderList `mapstructure:"headers"`
 }
 
 type HeaderList struct {
-	Method              string
-	Credentials         string
-	Headers             map[string]string
-	RequestStructure    map[string]string
-	ValidationStructure map[string]string
-	Iterations          uint
-	DependsOn           []string
+	Method              string                 `mapstructure:"method"`
+	Credentials         string                 `mapstructure:"credentials"`
+	Headers             map[string]string      `mapstructure:"headers"`
+	RequestStructure    map[string]string      `mapstructure:"request_structure"`
+	ValidationStructure map[string]interface{} `mapstructure:"validation_structure"`
+	Iterations          uint                   `mapstructure:"iterations"`
+	DependsOn           []string               `mapstructure:"depends_on"`
 }
