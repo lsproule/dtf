@@ -2,17 +2,22 @@ package main
 
 
 import (
-	"fmt"
-	"math/rand"
 )
 
-type Testing struct {
-	seed int64;
+
+type Ruleset struct {
+
+}
+
+type ProcessManager struct {
+	Ruleset []Ruleset
+	Completed []Ruleset
+	
 }
 
 
+
 func main() { 
-	test := Testing{seed: 1} 
-	rand.Seed(test.seed) 
-	fmt.Print("Hello, World!") 
+	// test := Testing{seed: 1} 
+
 }
