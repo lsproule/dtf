@@ -1,0 +1,7 @@
+
+rule_set:
+  - name: "example_rule_set_name"
+    rule_type: {}
+  - name: "other_ruleset"
+    rule_type: {}
+

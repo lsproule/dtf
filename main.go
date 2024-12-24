@@ -1,13 +1,7 @@
-package main
+package main 
 
+import "github.com/lsproule/dtf/src/cmd"
 
-import (
-)
-
-
-
-
-
-
-func main() { 
+func main() {
+  cmd.Execute()
 }
